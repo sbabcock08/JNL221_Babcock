@@ -9,33 +9,46 @@
 .header {
 	height: auto;
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
-	font-family: 'Georgia', serif;
+	font-family: 'serif;', serif;
 	background-color: #7f0012;
-	text-color: #1b0a07;
+  opacity: 90%;
+	color: black;
+}
+#pie {
+  float: right;
+  min-width: 60%;
+
+}
+.pq {border: solid; 
+  color: darkblue;
+  padding: 10px;
 }
 h4 {
 	font-style: italic;
 	font-size: 40px;
-	font-family: 'Georgia', serif;
+	font-family: 'serif;', serif;
 }
 h3 {
 	font-size: 30px;
 }
-p {font-family: 'Times New Roman', serif;
+p {font-family: 'Poppins', sans-serif;
 font-size: 20px;
 }
-img {
-	float: right; 
-	margin-right: 5%; 
-	margin-left: 5%
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-style: bold;
+  font-size: 15px;
+  color: darkblue;
 }
-
 
 /*Don't worry about this section yet*/
 @media only screen and (max-width: 767px)
 {
+  img {float: none;
+/*fix height/width*/}
+
  .list {
  	float: none;
  	min-width: 90%;
@@ -43,10 +56,18 @@ img {
  	margin-bottom: 30px;
  	margin-top: 30px;
  }
+ #pie {
+  float: none;
+  width: 100% !important;
+ }
  iframe {
  	min-width: 90%;
  	margin-right: 10px;
 	}
+.footer p {background-color: #7f0012;
+opacity: 90% !important; 
+color: black}
+}
 
 {<!-- HTML !-->
 
@@ -64,7 +85,7 @@ img {
   cursor: pointer;
   display: inline-flex;
   font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   justify-content: center;
   line-height: 1.3;
@@ -98,4 +119,57 @@ img {
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
-}}
+}
+
+{<!-- HTML !-->
+
+/*I created a button that I am going to link to the K-12 Database*/
+
+/* CSS */
+.button-7 
+  align-items: center;
+  background-color: #FFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.3;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+
+
+.button-7:hover,
+.button-7:focus 
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-7:hover {
+  transform: translateY(-1px);
+}
+
+.button-7:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+}
